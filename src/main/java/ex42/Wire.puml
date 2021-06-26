@@ -1,0 +1,19 @@
+@startuml
+
+class App{
+    +create_instance()
+    +get_data()
+    +print_the_chart()
+}
+
+App <|-- Chart
+
+class Chart{
+    'array list
+    -inputStrings
+    'array
+    -employees
+    +splitString()
+    +parse()
+}
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+class App{
+-scanner
++names[]
++output
+
++get_input()
++print_to_file
+}
+
+App <|-- FileManager
+
+class FileManager{
+-origList
+-sortedList
+
++sort_list()
+}
+@enduml
